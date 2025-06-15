@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuickList - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+      color: #102a43;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #334e68;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    nav ul.nav-list {
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+      margin: 0;
+      list-style: none;
+    }
+    nav ul.nav-list li {
+      margin: 0 1.5rem;
+    }
+    nav ul.nav-list li a {
+      color: #f0f4f8;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+    nav ul.nav-list li a:hover,
+    nav ul.nav-list li a.active {
+      background-color: #627d98;
+      color: #fff;
+    }
+    main.container {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    }
+    section.intro {
+      text-align: center;
+      padding: 3rem 2rem;
+    }
+    section.intro h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      font-weight: 700;
+      color: #102a43;
+    }
+    section.intro p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+      color: #334e68;
+    }
+    ul.features {
+      list-style: none;
+      padding: 0;
+      margin: 0 auto 2rem auto;
+      max-width: 500px;
+      text-align: left;
+      color: #334e68;
+    }
+    ul.features li {
+      background-color: #e1e8f0;
+      margin: 0.5rem 0;
+      padding: 1rem 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(50, 50, 93, 0.1);
+      font-weight: 500;
+      font-size: 1.1rem;
+    }
+    a.start-button {
+      display: inline-block;
+      background-color: #627d98;
+      color: #f0f4f8;
+      padding: 1rem 2rem;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 1.25rem;
+      box-shadow: 0 4px 12px rgba(98, 125, 152, 0.5);
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+    a.start-button:hover {
+      background-color: #334e68;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      background-color: #334e68;
+      color: #f0f4f8;
+      box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="todo.html">To-Do</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="intro">
+      <h1>Welcome to QuickList</h1>
+      <p>Your simple daily To-Do & Shopping List manager.</p>
+      <ul class="features">
+        <li>Create, edit, and manage your tasks and shopping lists easily.</li>
+        <li>Save your lists locally for quick access anytime.</li>
+        <li>Set reminders to stay on track.</li>
+      </ul>
+      <a href="todo.html" class="start-button">Get Started</a>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 QuickList. All rights reserved.</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
